@@ -7,3 +7,5 @@
 1. React
 2. Redux
 3. SCSS
+4. 12 unique button style in one component
+5. Toggle Switch
