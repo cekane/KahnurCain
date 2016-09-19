@@ -12,6 +12,7 @@ Now start the node server with:
 npm start
 ```
 
-
-
-
+## Tech
+1. React - home page is desgined using react components
+2. SCSS - Styles
+3. npm - package manager
