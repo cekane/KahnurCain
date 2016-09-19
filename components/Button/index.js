@@ -1,6 +1,8 @@
 import React from 'react'
 
-import { button, small, medium, blue, red, orange, yellow } from './Button.scss'
+import { button, small, medium, blue, red, orange, yellow, purple } from './Button.scss'
+
+
 import className from 'classnames'
 
 export class Button extends React.Component{
@@ -8,8 +10,8 @@ export class Button extends React.Component{
     super(props);
   }
 
-
   render () {
+
   	var size = '';
   	switch(this.props.size){
   		case 'small':
@@ -34,11 +36,13 @@ export class Button extends React.Component{
   		case 'yellow':
   			color = yellow;
   			break;
+      case 'purple':
+        color = purple;
+        break;
   	}
-  	console.log("Size" , size)
-    return (
 
-      <div className={ className(button, size, color)  } onClick={ this.props.handleOnClick }>{this.props.text}</div>
+    return (
+        <div className={ className(button, size, color)  } onClick={ this.props.handleOnClick }>{this.props.text}</div>
     )
   }
 }
