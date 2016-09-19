@@ -1,11 +1,17 @@
-# Bare-Bone-React-Template
-1. Clone project
-2. npm install
-3. npm start //configured to run on localhost:3333
+![alt text][logo]
+[logo]: https://github.com/cekane/KahnurCain/blob/master/images/frontpage-background.jpg "background"
+# Personal Website
 
-#Features
-1. React
-2. Redux
-3. SCSS
-4. 12 unique button style in one component
-5. Toggle Switch
+## Getting started
+After the repository is cloned, install all the dependicies with: 
+```sh
+npm install
+```
+Now start the node server with:
+```sh
+npm start
+```
+
+
+
+
