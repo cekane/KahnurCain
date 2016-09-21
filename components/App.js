@@ -7,34 +7,41 @@ import { Background } from './Containers/Background'
 import { StyleContainer } from './Containers/StyleContainer'
 import { Navbar } from './Navbar'
 import { NavbarButton } from './NavbarButton'
+import { Foreground } from './Foreground'
 
 import { BodyFront } from './BodyFront'
 
 export class App extends React.Component {
 
-	constructor(props) {
-		super(props)
-	}
+  constructor(props) {
+    super(props)
+  }
 
-	render() {
-		return (
-			<div>
-				<Background>
+  render() {
+    return (
+      <div>
+        <Background>
+        </Background>
+        <Navbar>
+          <NavbarButton color={ "limeGreen" } link={ "http://localhost:4444/index.html#SleepyingBeauty" }>Home</NavbarButton>
+          <NavbarButton color={ "white" } link={ "http://localhost:4444/index.html#SleepyingBeauty2" }>Work</NavbarButton>
+          <NavbarButton color={ "white" } link={"http://localhost:4444/work.html" }>Blog</NavbarButton>
+        </Navbar>
+          
+          <Foreground name={"SleepyingBeauty"} color={ "clear" } >
+          </Foreground>
+          <Foreground name={"SleepyingBeauty2"} color={ "white" } >
+            <img src="../images/tech4kidz.jpg"/>
+            <img src="../images/windrush.png"/>
+            <img src="../images/github.png"/>
+            <img src="../images/3m.jpg"/>
+          </Foreground>
+        
 
-					<Navbar>
-						<NavbarButton color={ "limeGreen" } link={ "http://www.google.com" }>Home</NavbarButton>
-						<NavbarButton color={ "white" } link={"http://localhost:4444/work.html"}>Blog</NavbarButton>
-						<NavbarButton color={ "white" } >Work</NavbarButton>
-					</Navbar>
-					<BodyFront>
-					
-					</BodyFront>
 
-					
-
-					
-				</Background>
-			</div>
-		);
-	}
+          
+        
+      </div>
+    );
+  }
 }

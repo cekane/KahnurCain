@@ -11,8 +11,9 @@ export class BodyFront extends React.Component{
 
   render () {
     return (
-      <div className={ outerConatiner }>
+      <div id={ this.props.name } className={ outerConatiner }>
         <img src="../../images/frontpage-background.jpg" className={ sleepingBeauty }/>
+        {this.props.children}
       </div>
     )
   }
