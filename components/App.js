@@ -8,6 +8,7 @@ import { StyleContainer } from './Containers/StyleContainer'
 import { Navbar } from './Navbar'
 import { NavbarButton } from './NavbarButton'
 import { Foreground } from './Foreground'
+import { WorkItem } from './WorkItem'
 
 import { BodyFront } from './BodyFront'
 
@@ -28,13 +29,12 @@ export class App extends React.Component {
           <NavbarButton color={ "white" } link={"http://localhost:4444/work.html" }>Blog</NavbarButton>
         </Navbar>
           
-          <Foreground name={"SleepyingBeauty"} color={ "clear" } >
-          </Foreground>
+          <Foreground name={"SleepyingBeauty"} color={ "clear" } />
           <Foreground name={"SleepyingBeauty2"} color={ "white" } >
-            <img src="../images/tech4kidz.jpg"/>
-            <img src="../images/windrush.png"/>
-            <img src="../images/github.png"/>
-            <img src="../images/3m.jpg"/>
+            <WorkItem image={ "tech4kidz.jpg" }/>
+            <WorkItem image={ "windrush.png" }/>
+            <WorkItem image={ "github.png" }/>
+            <WorkItem image={ "3m.jpg" }/>
           </Foreground>
         
 
