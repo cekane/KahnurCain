@@ -1,14 +1,16 @@
 import React from 'react';
-import { Toggle } from './Toggle'
 import { Button } from './Button'
 import { Row } from './Containers/Row'
 import { CommentBox } from './CommentBox'
 import { Background } from './Containers/Background'
 import { StyleContainer } from './Containers/StyleContainer'
+import { FlexContainer } from './Containers/FlexContainer'
+import { FlexItem } from './Containers/FlexItem'
 import { Navbar } from './Navbar'
 import { NavbarButton } from './NavbarButton'
 import { Foreground } from './Foreground'
 import { WorkItem } from './WorkItem'
+import { WorkDisplay } from './WorkDisplay'
 
 import { BodyFront } from './BodyFront'
 
@@ -31,10 +33,17 @@ export class App extends React.Component {
           
           <Foreground name={"SleepyingBeauty"} color={ "clear" } />
           <Foreground name={"SleepyingBeauty2"} color={ "white" } >
-            <WorkItem image={ "tech4kidz.jpg" }/>
-            <WorkItem image={ "windrush.png" }/>
-            <WorkItem image={ "github.png" }/>
-            <WorkItem image={ "3m.jpg" }/>
+          <FlexContainer>
+            <FlexItem size={ "small" }>
+              <WorkItem image={ "tech4kidz.jpg" } />
+              <WorkItem image={ "windrush.png" } />
+              <WorkItem image={ "github.png" } />
+              <WorkItem image={ "3m.jpg" } />
+            </FlexItem>
+            <FlexItem size={ "large" }>
+              <WorkDisplay/>
+            </FlexItem>
+          </FlexContainer>
           </Foreground>
         
 
